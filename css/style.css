@@ -1,0 +1,138 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+  }
+  
+
+  .bg-img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.8);
+    top: 0;
+    z-index: -1;
+    animation: zoomIn 4s infinite alternate; /* Apply zoom animation */
+  }
+  /* Title Section  */
+
+  #title {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .title-heading {
+    color: white;
+    text-align: center;
+    margin-top: 30%;
+    font-size: 100px;
+  }
+  
+  .title-text {
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  /* Navbar Section */
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .navbar-brand .logo {
+    width: 150px;
+    filter: brightness(1.2); /* Apply color touch to the logo */
+    padding-left: 20px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+
+  .navbar-nav {
+    margin-right: 0;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  
+
+  
+  #about-me,
+  #upcoming-event {
+    background-color: white;
+    padding: 40px;
+  }
+  
+  #upcoming-event h2,
+  #upcoming-event h4 {
+    color: rgb(148, 188, 67);
+  }
+  
+  .footer-container {
+    background-color: rgb(148, 188, 67);
+    padding: 40px 0;
+  }
+  
+  .footer-container h4,
+  .footer-container p {
+    color: white;
+  }
+  
+  .footer-container a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .footer-container a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+ 
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  .princezna {
+    width: 400px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+@media (max-width: 991.98px) {
+  .navbar-expand-lg .navbar-nav {
+      background-color: white;
+  }
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
